@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <h1 class="text-center text-6xl mt-5 mb-5">bank address</h1>
+   
+    <section class="max-w-screen-xl mx-auto px-8 md:px-16 py-5 md:py-10 grid grid-cols-3 gap-5">
+        <div class="w-auto bg-orange-500 p-6 shadow-md rounded-md m-4 ">
+            <h3 class="text-xl font-semibold mb-2">Deposite</h3>
+            <p class="text-2xl">$<span  id="deposite-output">50</span></p>
+        </div>
+    
+        <div class="w-auto bg-amber-400 p-6 shadow-md rounded-md m-4">
+            <h3 class="text-xl font-semibold mb-2">Withdraw</h3>
+            <p class="text-2xl">$<span id="withdraw-output">20</span></p>
+        </div>
+    
+        <div class="w-auto bg-lime-400 p-6 shadow-md rounded-md m-4">
+            <h3 class="text-xl font-semibold mb-2">Balance</h3>
+            <p class="text-2xl">$<span id="balance">1240</span></p>
+        </div>
+    
+    
+    
+    </section>
+
+    <!-- nicher div -->
+
+    <section class="max-w-screen-xl mx-auto px-8 md:px-16 py-5 md:py-10 flex flex-1 gap-2 ">
+        <div class="w-1/2 bg-emerald-400 p-6 shadow-md rounded-md m-4">
+            <h3 class="text-xl font-semibold mb-2">Please Deposite</h3>
+            <input type="text" id="deposite-field" placeholder="$Amount You Deposite" class="border p-2 rounded-md w-full mb-2">
+            <button class="bg-blue-500 text-white px-4 py-2 rounded-md" id="deposite-btn">Deposite</button>
+        </div>
+    
+        
+        <div class="w-1/2 bg-cyan-400 p-6 shadow-md rounded-md m-4">
+            <h3 class="text-xl font-semibold mb-2">Please Withdraw</h3>
+            <input type="text" id="withdraw-field" placeholder="$Amount You Withdraw" class="border p-2 rounded-md w-full mb-2">
+            <button id="withdraw-button" class="bg-blue-500 text-white px-4 py-2 rounded-md">Withdraw</button>
+        </div>
+
+    </section>
+    <script src="bank.js"></script>
+    <script src="withdraw.js"></script>
+    
+    
+</body>
+</html>
